@@ -4,7 +4,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-    <Text style={styles.text}>Another text</Text>
+    <Text style={{margin: 16, fontSize: 20, borderColor: 'blue', borderWidth: 2, padding: 16}}>Another text</Text>
       <Text>Hello Eshwar! Welcome to React Native App</Text>
       <Button title='Click Me'/>
       <StatusBar style="auto" />
