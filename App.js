@@ -2,17 +2,17 @@ import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
-  function goalInputHandler() {
-
+  function goalInputHandler(enteredText) {
+    console.log(enteredText);
   }
 
   function addGoalHandler() {
-    
+
   }
   return (
     <View style={styles.appContainer}>
       <View style={styles.inputContainer}>
-        <TextInput style={styles.textInput} placeholder='Your study goal!!!'/>
+        <TextInput style={styles.textInput} placeholder='Your study goal!!!' onChangeText={goalInputHandler}/>
         <Button title='Add Goal'/>
       </View>
       <View style={styles.goalsContainer}>
