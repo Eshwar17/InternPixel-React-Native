@@ -17,7 +17,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
-    padding: 50,
+    paddingTop: 50,
+    paddingHorizontal:16,
   },
   inputContainer: {
     flexDirection: 'row',
@@ -26,8 +27,8 @@ const styles = StyleSheet.create({
   textInput: {
     borderWidth: 1,
     borderColor: '#ccc',
-    width: '80%',
-    marginRight: 8,
+    width: '70%',
+    marginRight: 10,
     padding: 8,
   }
 });
